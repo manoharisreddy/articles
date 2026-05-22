@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+{% block abc %}
+
+<center>
+
+<h2>{{data.title}}</h2>
+
+<p>{{data.desc}}</p>
+
+<img src="{{data.image}}" width="500">
+
+<br><br>
+
+<a href="{% url 'Home' %}">Back</a>
+
+</center>
+
+{% endblock %}

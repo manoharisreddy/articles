@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Article Website</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+{% include 'nav.html' %}
+
+{% block abc %}
+{% endblock %}
+
+</body>
+</html>

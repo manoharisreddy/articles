@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+
+{% block abc %}
+
+<h2>Home page</h2>
+
+<center>
+
+{% for i in data %}
+
+<h2>{{i.title}}</h2>
+
+<h3>{{i.desc|truncatewords:5}}</h3>
+
+<img src="{{i.image}}" width="300">
+
+<br><br>
+
+<a href="{% url 'read' i.id %}">
+Read More
+</a>
+
+<hr>
+
+{% endfor %}
+
+</center>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+
+{% extends 'main.html' %}
+
+{% block abc %}
+<center>
+
+<h1 class="event-title">📅 Upcoming Tech Events 2026</h1>
+
+<div class="event-container">
+
+{% for event in events %}
+
+<div class="event-card">
+
+<img src="{{event.image}}">
+
+<div class="event-info">
+
+<h2>{{event.title}}</h2>
+
+<p class="event-date">📍 {{event.location}}</p>
+
+<p class="event-date">📆 {{event.date}}</p>
+
+<p>{{event.desc}}</p>
+
+<button class="register-btn">Register Now</button>
+
+</div>
+
+</div>
+
+{% endfor %}
+</div>
+</center>
+</div>
+
+{% endblock %}
